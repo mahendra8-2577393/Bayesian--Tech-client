@@ -15,7 +15,7 @@ const SearchForm = ({ onSubmit }) => {
     setError(null);
 
     try {
-      const response = await axios.post('http://localhost:5000/proxy', {
+      const response = await axios.post('https://bayesian-tech-server.onrender.com/proxy', {
         url: 'https://cardgpt.in/apitest',
         method: 'POST',
         headers: {
